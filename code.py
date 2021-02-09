@@ -1,6 +1,6 @@
 # counting words
 
-with open("emotion_words.txt", 'r') as f:
+with open("file.txt", 'r') as f:
     content = f.read()
     words_list = content.split()
     num_words = len(words_list)
@@ -8,12 +8,12 @@ with open("emotion_words.txt", 'r') as f:
 
 # counting lines using len method
 
-num_lines = len(open("school_prompt.txt").readlines())
+num_lines = len(open("file.txt").readlines())
 print(num_lines)
 
 # counting lines using counter
 
-with open('emotion_words.txt', 'r') as f:
+with open('file.txt', 'r') as f:
     content = f.readlines()
     num_lines = 0
     for _ in content:
@@ -22,15 +22,15 @@ with open('emotion_words.txt', 'r') as f:
 
 # visualizing first 30 characters of a file
 
-with open("school_prompt.txt", 'r') as f:
+with open("file.txt", 'r') as f:
     content = f.read()
     beginning_chars = content[:30]
     print(beginning_chars)
 
 # creating a list with 3rd element of each line
 
-with open("school_prompt.txt", 'r') as f:
-   three = []
+with open("file.txt", 'r') as f:
+   l = []
    content = f.read()
    n = content.splitlines()
    for i in n:
@@ -41,5 +41,5 @@ with open("school_prompt.txt", 'r') as f:
       m = line.split()
       for word in m:
          if m.index(word) == 2:
-            three.append(word)
-   print(three)
+            l.append(word)
+   print(l)
