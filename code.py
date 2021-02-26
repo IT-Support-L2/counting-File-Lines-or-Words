@@ -43,3 +43,11 @@ with open("file.txt", 'r') as f:
          if m.index(word) == 2:
             l.append(word)
    print(l)
+
+# shortest frequency dictionary code
+
+s = 'Python is fun'
+d = {}
+for i in s:
+    d[i] = d.get(i, 0) + 1
+print(d)
